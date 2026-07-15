@@ -84,16 +84,11 @@
 
   <main class="pt-[72px]">
     <!-- HERO -->
-    <section class="relative h-[85vh] min-h-[24rem] flex items-center overflow-hidden" style="background: #001C42;">
-      <!-- Animated aurora background -->
-      <div class="hero-aurora" aria-hidden="true">
-        <div class="hero-aurora__blob hero-aurora__blob--1"></div>
-        <div class="hero-aurora__blob hero-aurora__blob--2"></div>
-        <div class="hero-aurora__blob hero-aurora__blob--3"></div>
-        <div class="hero-aurora__blob hero-aurora__blob--4"></div>
+    <section class="relative h-[85vh] min-h-[24rem] flex items-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="w-full h-full bg-cover bg-center hero-bg-zoom" style="background-image: url('../assets/img/hero.n.png')"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(105deg, rgba(0,12,30,0.82) 0%, rgba(0,12,30,0.58) 45%, rgba(0,12,30,0.22) 100%);"></div>
       </div>
-      <!-- Bottom vignette -->
-      <div class="absolute bottom-0 left-0 right-0 h-24 pointer-events-none" aria-hidden="true" style="background: linear-gradient(to bottom, transparent, rgba(0,12,30,0.55));"></div>
       <div class="relative z-10 w-full max-w-container-max mx-auto px-4 md:px-margin-desktop text-white">
         <div class="max-w-2xl">
           <span class="font-label-caps text-label-caps text-on-primary-container mb-4 block tracking-widest" data-hero-animate="bottom" data-hero-delay="0">BUILDING COMMERCIAL BRIDGES</span>
