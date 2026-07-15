@@ -82,27 +82,30 @@
   </aside>
 
   <main>
-    <!-- HERO — Paceña épica con fondo oscuro -->
-    <section class="product-hero" style="min-height:90vh;" data-parallax="0.25">
-      <div class="absolute inset-0 parallax-bg" style="background-image:url('../../assets/img/products/pacena/hero-bg.png'); background-size:cover; background-position:center;"></div>
-      <div class="product-hero__overlay bg-gradient-to-t from-[#001C42] via-[#001C42]/70 to-[#001C42]/40"></div>
-      <div class="product-hero__content text-white text-center" style="padding-bottom:4rem;">
-        <nav class="mb-6" aria-label="Migas de pan">
-          <ol class="flex items-center gap-2 font-body-sm text-body-sm text-white/40 justify-center">
-            <li><a href="../index.html" class="hover:text-white transition-colors">Inicio</a></li>
-            <li><span class="material-symbols-outlined text-sm">chevron_right</span></li>
-            <li><a href="../productos.html" class="hover:text-white transition-colors">Productos</a></li>
-            <li><span class="material-symbols-outlined text-sm">chevron_right</span></li>
-            <li class="text-white/70 font-medium" aria-current="page">Cerveza Paceña</li>
-          </ol>
-        </nav>
-        <span class="font-label-caps text-label-caps tracking-[0.3em] text-white/40 mb-6 block" data-hero-animate="bottom" data-hero-delay="0">DESDE 1886</span>
-        <h1 class="font-headline-xl text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight" data-hero-stagger="char" data-hero-delay="0.15">Paceña: La Cumbre<br>de la Tradición</h1>
-        <p class="font-body-md text-lg text-white/50 max-w-xl mx-auto mb-10" data-hero-animate="bottom" data-hero-delay="0.8">Cerveza de alta montaña elaborada con agua pura de deshielo glacial, carácter único e historia inigualable.</p>
-        <img src="../../assets/img/products/pacena/lata-hero.png" alt="Lata de Cerveza Paceña Pilsener" class="mx-auto max-h-[20rem] md:max-h-[26rem] w-auto object-contain drop-shadow-[0_20px_60px_rgba(255,200,100,0.15)]" data-hero-animate="bottom" data-hero-delay="0.5" width="300" height="450">
-        <div class="flex justify-center gap-4 mt-10" data-hero-animate="bottom" data-hero-delay="1.1">
-          <a href="#herencia" class="btn-primary">Explorar Herencia</a>
-          <a href="#ficha" class="btn-ghost-inverted">Ficha Técnica</a>
+    <!-- HERO -->
+    <section class="relative h-[85vh] min-h-[24rem] flex items-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="w-full h-full bg-cover bg-center hero-bg-zoom" style="background-image: url('../../assets/img/hero.pacena.png')"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(105deg, rgba(0,12,30,0.82) 0%, rgba(0,12,30,0.58) 45%, rgba(0,12,30,0.22) 100%);"></div>
+      </div>
+      <div class="relative z-10 w-full max-w-container-max mx-auto px-4 md:px-margin-desktop text-white">
+        <div class="max-w-2xl">
+          <nav class="mb-6" aria-label="Migas de pan">
+            <ol class="flex items-center gap-2 font-body-sm text-body-sm text-white/40">
+              <li><a href="../index.html" class="hover:text-white transition-colors">Inicio</a></li>
+              <li><span class="material-symbols-outlined text-sm">chevron_right</span></li>
+              <li><a href="../productos.html" class="hover:text-white transition-colors">Productos</a></li>
+              <li><span class="material-symbols-outlined text-sm">chevron_right</span></li>
+              <li class="text-white/70 font-medium" aria-current="page">Cerveza Paceña</li>
+            </ol>
+          </nav>
+          <span class="font-label-caps text-label-caps tracking-[0.3em] text-white/40 mb-6 block" data-hero-animate="bottom" data-hero-delay="0">DESDE 1886</span>
+          <h1 class="font-headline-xl text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight" data-hero-stagger="char" data-hero-delay="0.15">Paceña: La Cumbre<br>de la Tradición</h1>
+          <p class="font-body-md text-lg text-white/50 max-w-md mb-10" data-hero-animate="bottom" data-hero-delay="0.8">Cerveza de alta montaña elaborada con agua pura de deshielo glacial, carácter único e historia inigualable.</p>
+          <div class="flex gap-4" data-hero-animate="bottom" data-hero-delay="1.1">
+            <a href="#herencia" class="btn-primary">Explorar Herencia</a>
+            <a href="#ficha" class="btn-ghost-inverted">Ficha Técnica</a>
+          </div>
         </div>
       </div>
     </section>
