@@ -449,8 +449,13 @@ function initScrollReveal() {
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
+        var el = entry.target;
+        el.classList.add('is-visible');
+        observer.unobserve(el);
+        // Clear stagger delay after reveal so hover/tilt transitions respond instantly
+        el.addEventListener('transitionend', function() {
+          el.style.transitionDelay = '0ms';
+        }, { once: true });
       }
     });
   }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
